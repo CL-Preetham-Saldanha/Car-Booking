@@ -1,0 +1,191 @@
+<head>
+    <link rel="stylesheet" href="../Style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div id="logo"><img src="../logoCars.png" alt=""></div>
+        <ul>
+            <li class="pbtn" id="Home"><a class="page" href="../Index.html">Home</a></li>
+            <li class="pbtn" id="Products"><a class="page" href="./Products.html">Products</a></li>
+            <li class="pbtn" id="Services"><a class="page highlightBorder" href="./Services.html">Services</a></li>
+            <li class="pbtn" id="Contact"><a class="page" href="./Contact.html">Contact us</a></li>
+        </ul>
+
+    </nav>
+
+
+    <div id="serviceContainer">
+        <div id="booking" class="service-component">
+            <img class="serviceImg" src="../ServicesImgs/car_showroom_exchange.PNG" alt="">
+
+
+            <details id="bookdetails">
+                <summary class="service-summary"><button class="btn">Register and book a car now, from your nearby
+                        showroom!</button>
+                </summary>
+                <div class="contact-form" id="booking-form">
+                    <form name="myForm" id="bookCar" class="input-fields">
+                        <label for="Name">Name</label>
+                        <input type="text" class="input" placeholder="Name" name="Name">
+                        <label for="Email">Email</label>
+                        <input type="text" class="input" placeholder="Email Address" name="Email">
+                        <label for="Phone">Phone</label>
+                        <input type="text" class="input" placeholder="Phone" name="Phone">
+
+                        <label for="Model">Model</label>
+                        <select name="Model" id="selectModel">
+
+                            <option value="Brezza">Vitara Brezza</option>
+                            <option value="Ertiga">Ertiga</option>
+                            <option value="Swift">Swift</option>
+                            <option value="Kizashi">Kizashi</option>
+
+                        </select>
+                        <label for="Date">Arrival Date</label>
+                        <input type="date" class="input" id="date" placeholder="Select the day for arrival" name="Date">
+
+
+
+                        <label for="Aadhar">Aadhar</label>
+                        <input type="text" class="input" placeholder="Aadhar" name="Aadhar">
+
+                        <label for="OTP">OTP</label>
+                        <input type="text" class="input" placeholder="Enter OTP sent to your contact" name="OTP">
+
+
+                        <div class="btn service-btn" id="submitbtn" onclick="submit()">confirm Order!</div>
+                    </form>
+                </div>
+            </details>
+        </div>
+
+
+        <div id="service" class="service-component">
+            <img class="serviceImg" src="../ServicesImgs/car_showroom_service.PNG" alt="">
+
+            <details>
+                <summary class="service-summary"><button class="btn">Book a service to your car </button></summary>
+                <div class="contact-form" id="booking-form">
+                    <form name="myForm" class="input-fields">
+                        <label for="Name">Name</label>
+                        <input type="text" class="input" placeholder="Name" name="Name">
+                        <label for="Email">Email</label>
+                        <input type="text" class="input" placeholder="Email Address" name="Email">
+                        <label for="Phone">Phone</label>
+                        <input type="text" class="input" placeholder="Phone" name="Phone">
+
+                        <label for="Model">Model</label>
+                        <select name="Model" id="selectModel">
+
+                            <option value="Brezza">Vitara Brezza</option>
+                            <option value="Ertiga">Ertiga</option>
+                            <option value="Swift">Swift</option>
+                            <option value="Kizashi">Kizashi</option>
+
+                        </select>
+                        <label for="Date">Arrival Date</label>
+                        <input type="date" class="input" id="date" placeholder="Select the day for arrival" name="Date">
+
+
+
+                        <label for="Aadhar">Aadhar</label>
+                        <input type="text" class="input" placeholder="Aadhar" name="Aadhar">
+
+                        <label for="OTP">OTP</label>
+                        <input type="text" class="input" placeholder="Enter OTP sent to your contact" name="OTP">
+
+
+                        <div class="btn service-btn" id="submitbtn" onclick="submit()">confirm Order!</div>
+
+                    </form>
+                </div>
+            </details>
+        </div>
+
+
+        <div class="service-component" id="exchange">
+            <img class="serviceImg" src="../ServicesImgs/car_showroom_booking.PNG" alt="">
+
+            <details>
+                <summary class="service-summary"><button class="btn">Find right value for your car </button></summary>
+                <div class="contact-form" id="booking-form">
+                    <form name="myForm" class="input-fields">
+                        <label for="Name">Name</label>
+                        <input type="text" class="input" placeholder="Name" name="Name">
+                        <label for="Email">Email</label>
+                        <input type="text" class="input" placeholder="Email Address" name="Email">
+                        <label for="Phone">Phone</label>
+                        <input type="text" class="input" placeholder="Phone" name="Phone">
+
+                        <label for="Model">Model</label>
+                        <select name="Model" id="selectModel">
+
+                            <option value="Brezza">Vitara Brezza</option>
+                            <option value="Ertiga">Ertiga</option>
+                            <option value="Swift">Swift</option>
+                            <option value="Kizashi">Kizashi</option>
+
+                        </select>
+                        <label for="Date">Arrival Date</label>
+                        <input type="date" class="input" id="date" placeholder="Select the day for arrival" name="Date">
+
+
+
+                        <label for="Aadhar">Aadhar</label>
+                        <input type="text" class="input" placeholder="Aadhar" name="Aadhar">
+
+                        <label for="OTP">OTP</label>
+                        <input type="text" class="input" placeholder="Enter OTP sent to your contact" name="OTP">
+
+
+                        <div class="btn service-btn" id="submitbtn" onclick="submit()">confirm Order!</div>
+                    </form>
+                </div>
+            </details>
+        </div>
+    </div>
+
+
+
+</body>
+<footer>
+    <div class="center">
+        CopyRight &copy; www.CarExperts.com all Rights reserved
+    </div>
+</footer>
+<script src="../Index.js">
+
+
+
+
+</script>
+<script>
+    function bookingCookie() {
+        // [...document.getElementsByClassName("page")][2].classList.add("highlightBorder");
+        const firstComp = [...document.getElementsByClassName("service-component")][0];
+        firstComp.classList.add("highlightImg");
+        setTimeout(() => {
+            firstComp.classList.remove("highlightImg");
+        }, 1800)
+
+
+        const options_arr = [...document.getElementById("selectModel")]
+        const book_details = document.getElementById("bookdetails");
+        const book_form = document.getElementById("bookCar");
+        var cname = localStorage.getItem("carName");
+        console.log(cname)
+        if (cname) {
+            book_details.setAttribute("open", "true");
+            let modelnum = parseInt(cname.charAt(1))
+            console.log(options_arr[modelnum - 1]);
+            options_arr[modelnum - 1].setAttribute("selected", "true")
+        }
+        localStorage.clear()
+
+    }
+
+    window.onload = bookingCookie();
+</script>

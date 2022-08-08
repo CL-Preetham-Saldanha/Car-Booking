@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Splash&display=swap" rel="stylesheet">
+    <script src="Index.js"></script>
+    <title>Car Showroom App</title>
+</head>
+
+<body>
+    <!-- <div id="title">Next level showroom</div> -->
+
+
+
+    <nav class="navbar">
+        <div id="logo"><img src="logoCars.png" alt=""></div>
+        <ul>
+            <li class="pbtn" id="Home"><a class="page" href="Index.html">Home</a></li>
+            <li class="pbtn" id="Products"><a class="page" href="./pages/Products.html">Products</a></li>
+            <li class="pbtn" id="Services"><a class="page" href="./pages/Services.html">Services</a>
+            </li>
+            <li class="pbtn" id="Contact"><a class="page" href="../pages/Contact.html">Contact us</a></li>
+        </ul>
+
+    </nav>
+
+    <div id="container">
+        <div class="Homecontent" id="intro">
+
+            <img id="introImage" src="car_showroom4.PNG" alt="showroom">
+            <p class="hometext"> &nbsp&nbsp&nbspDelivering promises
+                <span class="boldRed">nation wide</span> , Since <span class="boldRed">50 years </span>
+            </p>
+
+
+        </div>
+
+        <div class="Homecontent" id="explore">
+            <p id="exploreText introtext" class="hometext">Explore Our variety of Rides</p>
+            <img src="car_showroom2.PNG" alt="">
+        </div>
+
+        <div class="Homecontent" id="experience">
+            <img src="car_showroom3.PNG" alt="">
+            <p id="expText" class="hometext">Find your comfort in our brand new features</p>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+<footer>
+    <div class="center">
+        CopyRight &copy; www.CarExperts.com all Rights reserved
+    </div>
+
+</footer>
+
+<script>
+    window.onload = () => {
+
+        localStorage.clear();
+        [...document.getElementsByClassName("page")][0].classList.add("highlightBorder");
+
+
+    }
+
+
+</script>
+
+</html>
